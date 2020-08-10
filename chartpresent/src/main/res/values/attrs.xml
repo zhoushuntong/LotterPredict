@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PanelView">
+        <attr name="arcColor" format="color"/>
+        <attr name="keduColor" format="color"/>
+        <attr name="textColor" format="color"/>
+        <attr name="currentKeDuColor" format="color"/>
+        <attr name="totalKeDuColor" format="color"/>
+        <attr name="arcWidth" format="dimension"/>
+        <attr name="startDst" format="dimension"/>
+        <attr name="endDst" format="dimension"/>
+        <attr name="outPaintWidth" format="dimension"/>
+        <attr name="keduPaintWidth" format="dimension"/>
+        <attr name="jianju" format="dimension"/>
+        <attr name="outdoor_width" format="dimension"/>
+        <attr name="outdoor_height" format="dimension"/>
+        <attr name="guangbiao_width" format="dimension"/>
+        <attr name="guangbiao_height" format="dimension"/>
+        <attr name="android:text"/>
+
+        <attr name="tikeCount" format="integer"/>
+        <attr name="pointerColor" format="color"/>
+        <attr name="android:textSize"/>
+    </declare-styleable>
+</resources>

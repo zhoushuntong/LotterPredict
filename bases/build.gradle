@@ -1,0 +1,66 @@
+apply plugin: 'com.android.library'
+apply plugin: 'realm-android'
+android {
+
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        multiDexEnabled true
+        ndk {
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+        }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    //jdk1.8
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api(rootProject.ext.dependencies["appcompat-v7"]) {
+        exclude module: "support-v4"
+        exclude module: "support-annotations"
+    }
+    //lifecycle
+    api rootProject.ext.dependencies["lifrcycle-extension"]
+    api rootProject.ext.dependencies["lifecycle-reactstream"]
+    // rxjava rxandroid
+    api rootProject.ext.dependencies["rxjava2"]
+    api rootProject.ext.dependencies["rxandroid2"]
+    //arouter
+    api rootProject.ext.dependencies["router"]
+
+    api rootProject.ext.dependencies["toastcompat"]
+    api rootProject.ext.dependencies["glide"]
+    api rootProject.ext.dependencies["xcrash"]
+
+    annotationProcessor rootProject.ext.dependencies["glide-compiler"]
+    annotationProcessor rootProject.ext.dependencies["router-compiler"]
+
+
+}

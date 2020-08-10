@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">周公说票</string>
+    <string name="title_home">家</string>
+    <string name="title_dashboard">主板</string>
+    <string name="title_notifications">通知</string>
+    <string name="title_setting">设置</string>
+    <string name="title_add_lottery">彩票添加</string>
+    <string name="btn_clear_str">清除</string>
+    <string name="btn_add_str">添加</string>
+</resources>

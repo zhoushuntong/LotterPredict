@@ -1,0 +1,39 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fitsSystemWindows="true"
+        android:background="@android:color/holo_blue_dark"
+        android:minHeight="?attr/actionBarSize"/>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_FindFragment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:tabIndicatorColor="@android:color/background_dark"
+        app:tabIndicatorFullWidth="false"
+        app:tabMode="fixed"
+        app:tabIndicatorHeight="2dp"
+        app:tabSelectedTextColor="@android:color/holo_blue_dark"
+        app:tabTextColor="@android:color/holo_blue_bright"
+        app:tabGravity="fill"
+        app:tabPaddingStart="2dp"
+        app:tabPaddingEnd="2dp"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_add_lottery"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"/>
+
+
+</LinearLayout>

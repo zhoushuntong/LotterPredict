@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LotterAnalsis</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_setting">Setting</string>
+    <string name="title_add_lottery">彩票添加</string>
+    <string name="btn_clear_str">清除</string>
+    <string name="btn_add_str">添加</string>
+</resources>

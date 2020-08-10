@@ -1,0 +1,29 @@
+||*********|| 模块描述
+
+重构能力，快速理解分析项目、依赖库、业务逻辑，并能根据现有问题和需要进行重构。
+最终可以成为一个框架适应性强、短时间内可以搭建形成一个中型项目的模板。
+
+1、日志、xcrash集成使用、腾讯bugly 集成使用
+2、数据库greendao 封装使用，安全、升级、如何区分到每个业务中去、索引、事物、裸sql执行和效率问题。
+   protobuff 和greendao 集成
+   1）sqllite 封装
+   2）greendao 封装（3.0特点：库小、可加密sqlcipher、可集成protobuff/rxjava、快、缓存 、自动生成）
+   3）orlite 封装
+   4）realm 封装
+   5）file 存储封装
+   6）sharepreference 封装
+3、网络封装okhttp、retrofit rxjava 封装，同步、异步、websocket mqtt
+   1)HttpUrlConnect 封装
+   2)socket 封装
+   3）0khttp 封装
+   4）retrifot rxjava okhttp 封装
+4、工具类收集整理。
+5、自定义视图类封装管理
+6、Arouter 封装整理
+7、图片glide 功能封装整理、大图长图、gif图片加载。
+8、线程池 使用封装
+1、核心为使用数学算法、经验算法生成推荐号码，并迭代验证、样本训练。
+2、推荐功能增加参数设置，可以微调一些参数，影响推荐结果。
+
+音视频开发、资源收集（图标、自定义视图、效果、测试数据、地址工具类收集）
+

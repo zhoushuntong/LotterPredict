@@ -1,0 +1,6 @@
+||*********|| 项目描述
+
+
+
+  日志依赖 ：compile 'com.orhanobut:logger:1.15'
+  崩溃本地依赖 ：implementation 'com.iqiyi.xcrash:xcrash-android-lib:2.4.9'
